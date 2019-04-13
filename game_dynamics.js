@@ -275,7 +275,7 @@ function pause() {
 	}else if (paused) {
 		ctx.font = "30px Arial";
 		ctx.textAlign = "center";
-		ctx.fillText("Click space to continue.", canvas.width/2, canvas.height/2 + 30);
+		ctx.fillText("Press space to continue.", canvas.width/2, canvas.height/2 + 30);
 		clearInterval(interval);
 		interval = setInterval(pause, intervalset);
 	}
@@ -421,7 +421,7 @@ function keyUpEventHandler(e) {
     	}
 
     } else if (e.keyCode = 13) {
-    	// to do : handle the exit control of game page .
+    	window.location.href = "homepage.html";
     }
 }
 
